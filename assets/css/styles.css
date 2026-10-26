@@ -880,9 +880,15 @@ html:not(.js) .lang-switch { display: none; }
   hyphens: manual;
 }
 
+.degree-focus {
+  margin-top: 0.75rem;
+  color: var(--ink);
+}
+
 .degree-official {
-  margin-top: 0.5rem;
+  margin-top: 0.35rem;
   color: var(--sub);
+  font-size: 0.875rem;
 }
 
 .facts { margin-top: 1.5rem; }
