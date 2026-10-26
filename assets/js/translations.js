@@ -1,12 +1,19 @@
 /*
- * English version of widad.ch
+ * Translations for widad.ch – English, Italian and French
  *
  * German is the default and lives directly in index.html. Every element marked
  * with data-i18n="key" (text) or data-i18n-attr="attribute:key" (attributes)
- * is listed here with its English counterpart. When you change or add German
- * text in index.html, update the matching key below.
+ * has a counterpart under the same key in each language below. When you change
+ * or add German text in index.html, update the matching key in all three.
+ *
+ * Widad writes in the first person (feminine forms in Italian and French) and
+ * addresses employers formally (Sie / Lei / vous).
+ * French uses a non-breaking space ( ) before : ; ? ! and inside « ».
  */
 window.WIDAD_TRANSLATIONS = {
+  /* ----------------------------------------------------------------------
+   * English
+   * -------------------------------------------------------------------- */
   en: {
     "meta.title": "Widad Jamal | Office Management & Business Operations",
     "meta.description": "Widad Jamal – Office Manager in Lugano with experience in office management, business operations and international coordination. Open to new roles in German-speaking Switzerland and ready to relocate.",
@@ -18,7 +25,7 @@ window.WIDAD_TRANSLATIONS = {
     "nav.profile": "Profile",
     "nav.experience": "Experience",
     "nav.contact": "Contact",
-    "nav.language": "Choose language",
+    "nav.language": "Language",
 
     "hero.tagline": "Structure for every day.<br>A feel for people.",
     "hero.lead": "I organise day-to-day office life, coordinate across locations and keep information flowing – so that international teams can work well together.",
@@ -46,6 +53,7 @@ window.WIDAD_TRANSLATIONS = {
     "exp.aplus.more2": "I coordinate documentation and processes between departments and support their day-to-day initiatives.",
     "exp.aplus.more3": "I contribute to corporate events, workplace initiatives and improvements to internal processes.",
 
+    "exp.tnf.period": "<time datetime=\"2024-04\">April 2024</time> – <time datetime=\"2025-04\">April 2025</time>",
     "exp.tnf.place": "Stabio, Switzerland",
     "exp.tnf.official": "Official job title: Retail Customer Experience Intern",
     "exp.tnf.lead": "I coordinated retail communications between headquarters, departments and <em>90+ stores across EMEA.</em>",
@@ -102,5 +110,207 @@ window.WIDAD_TRANSLATIONS = {
 
     "footer.place": "Chiasso, Switzerland",
     "footer.top": "Back to top"
+  },
+
+  /* ----------------------------------------------------------------------
+   * Italiano
+   * -------------------------------------------------------------------- */
+  it: {
+    "meta.title": "Widad Jamal | Office Management & Business Operations",
+    "meta.description": "Widad Jamal – Office Manager a Lugano con esperienza in office management, business operations e coordinamento internazionale. Aperta a nuove posizioni nella Svizzera tedesca e pronta a trasferirsi.",
+
+    "nav.skip": "Vai al contenuto",
+    "nav.home": "widad. – torna all’inizio",
+    "nav.label": "Navigazione principale",
+    "nav.menu": "Menu",
+    "nav.profile": "Profilo",
+    "nav.experience": "Esperienza",
+    "nav.contact": "Contatti",
+    "nav.language": "Lingua",
+
+    "hero.tagline": "Struttura nel quotidiano.<br>Intuito per le persone.",
+    "hero.lead": "Organizzo la quotidianità dell’ufficio, coordino il lavoro tra più sedi e faccio circolare le informazioni – affinché i team internazionali possano lavorare bene insieme.",
+    "hero.ctaPrimary": "Conosciamoci",
+    "hero.ctaSecondary": "Scopri la mia esperienza",
+    "hero.availability": "Aperta a nuove posizioni nella Svizzera tedesca – e pronta a trasferirmi.",
+    "hero.portraitAlt": "Ritratto di Widad Jamal con blazer blu scuro e camicetta bianca",
+    "hero.location": "Chiasso, Svizzera",
+
+    "exp.chapter": "Esperienza",
+    "exp.title": "Uno sguardo alla mia esperienza.",
+    "exp.deck": "Due incarichi in Ticino – entrambi con una dimensione internazionale.",
+    "exp.more": "Maggiori dettagli sulle mie mansioni",
+
+    "exp.aplus.period": "<time datetime=\"2025-10\">ottobre 2025</time> – oggi",
+    "exp.aplus.place": "Lugano, Svizzera",
+    "exp.aplus.lead": "Organizzo la quotidianità dell’ufficio presso la sede principale di Lugano e coordino attività amministrative e operative tra <em>Lugano, Dubai e Miami.</em>",
+    "exp.aplus.task1": "Gestione di ufficio, facility e reception – punto di riferimento per collaboratori, visitatori, fornitori e prestatori di servizi esterni",
+    "exp.aplus.task2": "Supporto amministrativo e operativo a Finance, HR e Marketing",
+    "exp.aplus.task3": "Supporto al management: coordinamento delle riunioni, corrispondenza riservata e follow-up delle questioni interne",
+    "exp.aplus.exampleLabel": "Esempio · MIPIM, Cannes",
+    "exp.aplus.example": "Per la presenza di A++ Group alla fiera internazionale del settore immobiliare ho collaborato alla preparazione, alla logistica e all’allestimento in loco, ho rappresentato l’azienda e ho supportato i colloqui con clienti internazionali.",
+    "exp.aplus.moreContext": " presso A++ Group",
+    "exp.aplus.more1": "Con fornitori e prestatori di servizi esterni tengo sotto controllo qualità del servizio, tempi e costi.",
+    "exp.aplus.more2": "Coordino documenti e processi tra i reparti e supporto le loro iniziative nel lavoro quotidiano.",
+    "exp.aplus.more3": "Collaboro a eventi aziendali, a iniziative per l’ambiente di lavoro e al miglioramento dei processi interni.",
+
+    "exp.tnf.period": "<time datetime=\"2024-04\">aprile 2024</time> – <time datetime=\"2025-04\">aprile 2025</time>",
+    "exp.tnf.place": "Stabio, Svizzera",
+    "exp.tnf.official": "Titolo ufficiale: Retail Customer Experience Intern",
+    "exp.tnf.lead": "Ho coordinato la comunicazione retail tra headquarter, reparti e <em>oltre 90 negozi nell’area EMEA.</em>",
+    "exp.tnf.task1": "Aggiornamenti operativi, newsletter e altri formati di comunicazione interna per i negozi",
+    "exp.tnf.task2": "Supporto all’apertura di nuovi negozi e assistenza amministrativa e operativa al management retail",
+    "exp.tnf.task3": "Analisi di KPI retail e dati di vendita per report e presentazioni",
+    "exp.tnf.exampleLabel": "Esempio · EMEA Store Leaders Meeting",
+    "exp.tnf.example": "Co-organizzazione dell’incontro annuale con oltre 160 partecipanti da 13 paesi – tra l’altro logistica dell’evento, coordinamento dei fornitori, transfer e materiali.",
+    "exp.tnf.moreContext": " presso The North Face",
+    "exp.tnf.more1": "Ho curato le schede digitali dei negozi su Google Business Profile, Brand Store Locator e Apple – corrette e conformi alle linee guida del marchio.",
+    "exp.tnf.more2": "Per il management retail EMEA ho preparato riunioni, pianificato agende e supportato il coordinamento con interlocutori internazionali.",
+    "exp.tnf.more3": "Ho raccolto le informazioni dei diversi reparti affinché i negozi ricevessero per tempo ciò di cui avevano bisogno.",
+
+    "skills.chapter": "Metodo di lavoro",
+    "skills.title": "Cosa posso apportare al Suo team.",
+    "skills.office": "Reception e visitatori, gestione degli spazi, fornitori, accessi, risorse e riunioni: mantengo l’ufficio ben organizzato, così il team può concentrarsi sul proprio lavoro – e propongo idee per processi più semplici.",
+    "skills.coordTitle": "Coordinamento internazionale",
+    "skills.coord": "Coordino le attività tra sedi, reparti e partner esterni e tengo sotto controllo scadenze, responsabilità e punti aperti. Le lingue che parlo mi facilitano il coordinamento oltre i confini.",
+    "skills.commsTitle": "Comunicazione e supporto operativo",
+    "skills.comms": "Preparo le informazioni in modo che arrivino a destinazione – come aggiornamenti operativi, newsletter, report o presentazioni. Supporto i responsabili nella preparazione delle riunioni, nella corrispondenza e nel follow-up dei punti aperti.",
+    "skills.toolsTitle": "Strumenti e sistemi",
+
+    "edu.chapter": "Formazione e lingue",
+    "edu.title": "Formazione e lingue.",
+    "edu.eduTitle": "Formazione",
+    "edu.degree": "Bachelor of Arts in Lingue straniere applicate",
+    "edu.officialLabel": "Denominazione ufficiale:",
+    "edu.uniLabel": "Università",
+    "edu.uni": "Université Marie et Louis Pasteur, Besançon (Francia)",
+    "edu.uniFormer": "in precedenza Université de Franche-Comté",
+    "edu.periodLabel": "Studi",
+    "edu.period": "settembre 2021 – giugno 2024",
+    "edu.creditsLabel": "Titolo",
+    "edu.credits": "180 ECTS, con menzione «Bien»",
+    "edu.langTitle": "Lingue",
+    "edu.langNote": "Livelli secondo il Quadro comune europeo di riferimento per le lingue (QCER), scala da A1 a C2.",
+    "lang.it": "Italiano",
+    "lang.ar": "Arabo",
+    "lang.fr": "Francese",
+    "lang.en": "Inglese",
+    "lang.pt": "Portoghese",
+    "lang.de": "Tedesco",
+    "lang.deNote": "Continuo a impararlo attivamente.",
+
+    "contact.chapter": "Contatti",
+    "contact.title": "Facciamo <span class=\"accent-italic\">conoscenza.</span>",
+    "contact.text": "Cerca supporto nell’office management o nel coordinamento di team internazionali? Sarò lieta di ricevere un Suo messaggio.",
+    "contact.emailLabel": "Scrivere un’e-mail",
+    "contact.linkedinLabel": "Aprire il profilo LinkedIn",
+    "contact.newTab": "(si apre in una nuova scheda)",
+    "contact.cvLabel": "Richiedere il CV",
+    "contact.cvValue": "Aprire un’e-mail già pronta",
+    "contact.cvHref": "mailto:widad.jamal@outlook.com?subject=Richiesta%20CV%20%E2%80%93%20Widad%20Jamal&body=Gentile%20signora%20Jamal%2C%0A%0Ami%20farebbe%20piacere%20ricevere%20il%20Suo%20CV.%0A%0APosizione%20%2F%20azienda%3A%20%0A%0ACordiali%20saluti%0A",
+
+    "footer.place": "Chiasso, Svizzera",
+    "footer.top": "Torna su"
+  },
+
+  /* ----------------------------------------------------------------------
+   * Français
+   * -------------------------------------------------------------------- */
+  fr: {
+    "meta.title": "Widad Jamal | Office Management & Business Operations",
+    "meta.description": "Widad Jamal – Office Manager à Lugano, avec de l’expérience en office management, business operations et coordination internationale. Ouverte à de nouveaux postes en Suisse alémanique et prête à déménager.",
+
+    "nav.skip": "Aller au contenu",
+    "nav.home": "widad. – retour en haut de page",
+    "nav.label": "Navigation principale",
+    "nav.menu": "Menu",
+    "nav.profile": "Profil",
+    "nav.experience": "Expérience",
+    "nav.contact": "Contact",
+    "nav.language": "Langue",
+
+    "hero.tagline": "Structure au quotidien.<br>Sens de l’humain.",
+    "hero.lead": "J’organise le quotidien du bureau, je coordonne entre plusieurs sites et je veille à ce que l’information circule – pour que les équipes internationales travaillent bien ensemble.",
+    "hero.ctaPrimary": "Faisons connaissance",
+    "hero.ctaSecondary": "Voir mon expérience",
+    "hero.availability": "Ouverte à de nouveaux postes en Suisse alémanique – et prête à déménager.",
+    "hero.portraitAlt": "Portrait de Widad Jamal en blazer bleu marine et chemisier blanc",
+    "hero.location": "Chiasso, Suisse",
+
+    "exp.chapter": "Expérience",
+    "exp.title": "Un aperçu de mon expérience.",
+    "exp.deck": "Deux postes au Tessin – tous deux avec une dimension internationale.",
+    "exp.more": "En savoir plus sur mes missions",
+
+    "exp.aplus.period": "<time datetime=\"2025-10\">octobre 2025</time> – aujourd’hui",
+    "exp.aplus.place": "Lugano, Suisse",
+    "exp.aplus.lead": "J’organise le quotidien du bureau au siège de Lugano et je coordonne les activités administratives et opérationnelles entre <em>Lugano, Dubaï et Miami.</em>",
+    "exp.aplus.task1": "Gestion du bureau, des locaux et de l’accueil – interlocutrice des collaborateurs, des visiteurs, des fournisseurs et des prestataires externes",
+    "exp.aplus.task2": "Soutien administratif et opérationnel aux équipes Finance, RH et Marketing",
+    "exp.aplus.task3": "Soutien à la direction : coordination des réunions, correspondance confidentielle et suivi des dossiers internes",
+    "exp.aplus.exampleLabel": "Exemple · MIPIM, Cannes",
+    "exp.aplus.example": "Pour la présence d’A++ Group au salon international de l’immobilier, j’ai participé à la préparation, à la logistique et à l’installation sur place, j’ai représenté l’entreprise et soutenu les échanges avec des clients internationaux.",
+    "exp.aplus.moreContext": " chez A++ Group",
+    "exp.aplus.more1": "Avec les fournisseurs et prestataires externes, je veille à la qualité du service, aux délais et aux coûts.",
+    "exp.aplus.more2": "Je coordonne documents et processus entre les départements et soutiens leurs initiatives au quotidien.",
+    "exp.aplus.more3": "Je contribue aux événements d’entreprise, aux initiatives liées au cadre de travail et à l’amélioration des processus internes.",
+
+    "exp.tnf.period": "<time datetime=\"2024-04\">avril 2024</time> – <time datetime=\"2025-04\">avril 2025</time>",
+    "exp.tnf.place": "Stabio, Suisse",
+    "exp.tnf.official": "Intitulé officiel du poste : Retail Customer Experience Intern",
+    "exp.tnf.lead": "J’ai coordonné la communication retail entre le siège, les départements et <em>plus de 90 magasins de la zone EMEA.</em>",
+    "exp.tnf.task1": "Mises à jour opérationnelles, newsletters et autres formats de communication interne pour les magasins",
+    "exp.tnf.task2": "Soutien aux ouvertures de magasins et appui administratif et opérationnel à la direction retail",
+    "exp.tnf.task3": "Analyse des KPI retail et des données de vente pour des rapports et des présentations",
+    "exp.tnf.exampleLabel": "Exemple · EMEA Store Leaders Meeting",
+    "exp.tnf.example": "Co-organisation de la rencontre annuelle réunissant plus de 160 participants de 13 pays – notamment logistique de l’événement, coordination des prestataires, transferts et supports.",
+    "exp.tnf.moreContext": " chez The North Face",
+    "exp.tnf.more1": "J’ai géré les fiches numériques des magasins sur Google Business Profile, Brand Store Locator et Apple – exactes et conformes aux directives de la marque.",
+    "exp.tnf.more2": "Pour la direction retail EMEA, j’ai préparé des réunions, planifié les agendas et soutenu la coordination avec des interlocuteurs internationaux.",
+    "exp.tnf.more3": "J’ai regroupé les informations des différents départements afin que les magasins reçoivent à temps ce dont ils avaient besoin.",
+
+    "skills.chapter": "Façon de travailler",
+    "skills.title": "Ce que j’apporte à votre équipe.",
+    "skills.office": "Accueil et visiteurs, locaux, fournisseurs, accès, ressources et réunions : je veille au bon fonctionnement du bureau pour que l’équipe puisse se concentrer sur son travail – et je propose des idées pour simplifier les processus.",
+    "skills.coordTitle": "Coordination internationale",
+    "skills.coord": "Je coordonne le travail entre sites, départements et partenaires externes, en gardant un œil sur les délais, les responsabilités et les points ouverts. Mes langues facilitent la coordination au-delà des frontières.",
+    "skills.commsTitle": "Communication et soutien opérationnel",
+    "skills.comms": "Je prépare l’information pour qu’elle soit bien reçue – sous forme de mises à jour opérationnelles, de newsletters, de rapports ou de présentations. J’assiste les responsables dans la préparation des réunions, la correspondance et le suivi des points ouverts.",
+    "skills.toolsTitle": "Outils et systèmes",
+
+    "edu.chapter": "Formation et langues",
+    "edu.title": "Formation et langues.",
+    "edu.eduTitle": "Formation",
+    "edu.degree": "Bachelor of Arts en langues étrangères appliquées",
+    "edu.officialLabel": "Intitulé officiel :",
+    "edu.uniLabel": "Université",
+    "edu.uni": "Université Marie et Louis Pasteur, Besançon (France)",
+    "edu.uniFormer": "anciennement Université de Franche-Comté",
+    "edu.periodLabel": "Études",
+    "edu.period": "septembre 2021 – juin 2024",
+    "edu.creditsLabel": "Diplôme",
+    "edu.credits": "180 ECTS, mention « Bien »",
+    "edu.langTitle": "Langues",
+    "edu.langNote": "Niveaux selon le Cadre européen commun de référence pour les langues (CECR), échelle de A1 à C2.",
+    "lang.it": "Italien",
+    "lang.ar": "Arabe",
+    "lang.fr": "Français",
+    "lang.en": "Anglais",
+    "lang.pt": "Portugais",
+    "lang.de": "Allemand",
+    "lang.deNote": "Je continue à l’apprendre activement.",
+
+    "contact.chapter": "Contact",
+    "contact.title": "Faisons <span class=\"accent-italic\">connaissance.</span>",
+    "contact.text": "Vous cherchez un soutien en office management ou dans la coordination d’équipes internationales ? Je me réjouis de votre message.",
+    "contact.emailLabel": "Écrire un e-mail",
+    "contact.linkedinLabel": "Ouvrir le profil LinkedIn",
+    "contact.newTab": "(s’ouvre dans un nouvel onglet)",
+    "contact.cvLabel": "Demander mon CV",
+    "contact.cvValue": "Ouvrir un e-mail préparé",
+    "contact.cvHref": "mailto:widad.jamal@outlook.com?subject=Demande%20de%20CV%20%E2%80%93%20Widad%20Jamal&body=Bonjour%20Madame%20Jamal%2C%0A%0AJe%20souhaiterais%20recevoir%20votre%20CV.%0A%0APoste%20%2F%20entreprise%C2%A0%3A%20%0A%0AMeilleures%20salutations%0A",
+
+    "footer.place": "Chiasso, Suisse",
+    "footer.top": "Haut de page"
   }
 };

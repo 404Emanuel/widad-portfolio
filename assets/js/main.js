@@ -1,5 +1,5 @@
 /*
- * widad.ch – language switch (DE/EN) and compact mobile navigation.
+ * widad.ch – language switch (DE/EN/IT/FR) and compact mobile navigation.
  * The page is fully readable without JavaScript (German, links visible).
  */
 (function () {
@@ -7,7 +7,7 @@
 
   var STORAGE_KEY = 'widad-lang';
   var DEFAULT_LANG = 'de';
-  var HTML_LANG = { de: 'de-CH', en: 'en-GB' };
+  var HTML_LANG = { de: 'de-CH', en: 'en-GB', it: 'it-CH', fr: 'fr-CH' };
   var root = document.documentElement;
   var translations = window.WIDAD_TRANSLATIONS || {};
 
@@ -115,7 +115,7 @@
     } catch (error) { /* private mode or blocked storage: ignore */ }
   }
 
-  // Keep a shareable URL: widad.ch/?lang=en opens the English version.
+  // Keep a shareable URL: widad.ch/?lang=en (or it, fr) opens that version directly.
   function syncUrl(lang) {
     try {
       var url = new URL(window.location.href);
@@ -146,9 +146,9 @@
 
   var header = document.querySelector('.site-header');
   var toggle = document.querySelector('.menu-toggle');
-  var navList = document.getElementById('nav-list');
+  var navPanel = document.getElementById('nav-panel');
 
-  if (header && toggle && navList) {
+  if (header && toggle && navPanel) {
     var isOpen = function () {
       return toggle.getAttribute('aria-expanded') === 'true';
     };
@@ -162,7 +162,8 @@
       setMenu(!isOpen());
     });
 
-    navList.addEventListener('click', function (event) {
+    // Following a link closes the menu; switching language keeps it open.
+    navPanel.addEventListener('click', function (event) {
       if (event.target.closest('a')) setMenu(false);
     });
 

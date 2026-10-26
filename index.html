@@ -17,6 +17,8 @@
   <meta property="og:description" content="Office Management · Business Operations · International Coordination. Offen für neue Positionen in der Deutschschweiz und bereit für einen Umzug.">
   <meta property="og:locale" content="de_CH">
   <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="it_CH">
+  <meta property="og:locale:alternate" content="fr_CH">
   <meta property="og:image" content="https://widad.ch/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -43,8 +45,9 @@
       try {
         var fromUrl = new URLSearchParams(window.location.search).get('lang');
         var stored = window.localStorage.getItem('widad-lang');
-        var lang = fromUrl === 'en' || fromUrl === 'de' ? fromUrl : stored;
-        if (lang === 'en') {
+        var supported = ['de', 'en', 'it', 'fr'];
+        var lang = supported.indexOf(fromUrl) > -1 ? fromUrl : stored;
+        if (lang && lang !== 'de' && supported.indexOf(lang) > -1) {
           root.classList.add('i18n-pending');
           window.setTimeout(function () { root.classList.remove('i18n-pending'); }, 1500);
         }
@@ -79,21 +82,27 @@
       <a class="wordmark" href="#top" translate="no" data-i18n-attr="aria-label:nav.home" aria-label="widad. – zum Seitenanfang">widad.</a>
 
       <nav class="site-nav" data-i18n-attr="aria-label:nav.label" aria-label="Hauptnavigation">
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
           <span data-i18n="nav.menu">Menü</span>
           <svg class="icon menu-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 5h12"/><path d="M2 11h12"/></svg>
         </button>
-        <ul class="nav-list" id="nav-list">
-          <li><a href="#profil" data-i18n="nav.profile">Profil</a></li>
-          <li><a href="#erfahrung" data-i18n="nav.experience">Erfahrung</a></li>
-          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
-        </ul>
-      </nav>
+        <!-- Desktop: links and language codes in one row. Mobile: shown as a drop-down panel. -->
+        <div class="nav-panel" id="nav-panel">
+          <ul class="nav-list">
+            <li><a href="#profil" data-i18n="nav.profile">Profil</a></li>
+            <li><a href="#erfahrung" data-i18n="nav.experience">Erfahrung</a></li>
+            <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+          </ul>
 
-      <div class="lang-switch" role="group" data-i18n-attr="aria-label:nav.language" aria-label="Sprache wählen">
-        <button type="button" data-lang="de" lang="de" aria-label="DE – Deutsch" aria-pressed="true">DE</button>
-        <button type="button" data-lang="en" lang="en" aria-label="EN – English" aria-pressed="false">EN</button>
-      </div>
+          <div class="lang-switch" role="group" aria-labelledby="lang-label">
+            <p class="lang-label" id="lang-label" data-i18n="nav.language">Sprache</p>
+            <button type="button" data-lang="de" lang="de" aria-label="DE – Deutsch" aria-pressed="true"><span class="lang-code">DE</span><span class="lang-name">Deutsch</span></button>
+            <button type="button" data-lang="en" lang="en" aria-label="EN – English" aria-pressed="false"><span class="lang-code">EN</span><span class="lang-name">English</span></button>
+            <button type="button" data-lang="it" lang="it" aria-label="IT – Italiano" aria-pressed="false"><span class="lang-code">IT</span><span class="lang-name">Italiano</span></button>
+            <button type="button" data-lang="fr" lang="fr" aria-label="FR – Français" aria-pressed="false"><span class="lang-code">FR</span><span class="lang-name">Français</span></button>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -183,7 +192,7 @@
           <article class="station" aria-labelledby="tnf-title">
             <header class="station-head">
               <p class="station-meta">
-                <span><time datetime="2024-04">April 2024</time> – <time datetime="2025-04">April 2025</time></span>
+                <span data-i18n="exp.tnf.period"><time datetime="2024-04">April 2024</time> – <time datetime="2025-04">April 2025</time></span>
                 <span data-i18n="exp.tnf.place">Stabio, Schweiz</span>
               </p>
               <h3 class="station-company" id="tnf-title">The North Face</h3>
