@@ -9,7 +9,7 @@
 window.WIDAD_TRANSLATIONS = {
   en: {
     "meta.title": "Widad Jamal | Office Management & Business Operations",
-    "meta.description": "Widad Jamal – Office Manager in Lugano with experience in office management, business operations and international coordination. Open to new roles in German-speaking Switzerland.",
+    "meta.description": "Widad Jamal – Office Manager in Lugano with experience in office management, business operations and international coordination. Open to new roles in German-speaking Switzerland and ready to relocate.",
 
     "nav.skip": "Skip to content",
     "nav.home": "widad. – back to top",
@@ -24,7 +24,7 @@ window.WIDAD_TRANSLATIONS = {
     "hero.lead": "I organise day-to-day office life, coordinate across locations and keep information flowing – so that international teams can work well together.",
     "hero.ctaPrimary": "Let’s get in touch",
     "hero.ctaSecondary": "View my experience",
-    "hero.availability": "Open to new roles in German-speaking Switzerland.",
+    "hero.availability": "Open to new roles in German-speaking Switzerland – and ready to relocate.",
     "hero.portraitAlt": "Portrait of Widad Jamal in a navy blazer and white blouse",
     "hero.location": "Chiasso, Switzerland",
 
@@ -71,13 +71,15 @@ window.WIDAD_TRANSLATIONS = {
     "edu.chapter": "Education & Languages",
     "edu.title": "Education and languages.",
     "edu.eduTitle": "Education",
-    "edu.degree": "Licence in Applied Foreign Languages",
+    "edu.degree": "Bachelor of Arts in Applied Foreign Languages",
+    "edu.officialLabel": "Official title:",
     "edu.uniLabel": "University",
-    "edu.uni": "Université de Besançon, France",
+    "edu.uni": "Université Marie et Louis Pasteur, Besançon (France)",
+    "edu.uniFormer": "formerly Université de Franche-Comté",
     "edu.periodLabel": "Studies",
     "edu.period": "September 2021 – June 2024",
     "edu.creditsLabel": "Degree",
-    "edu.credits": "180 ECTS (bachelor’s level), with the distinction “Bien”",
+    "edu.credits": "180 ECTS, with the distinction “Bien”",
     "edu.langTitle": "Languages",
     "edu.langNote": "Levels according to the Common European Framework of Reference (CEFR), on a scale from A1 to C2.",
     "lang.it": "Italian",
@@ -86,6 +88,7 @@ window.WIDAD_TRANSLATIONS = {
     "lang.en": "English",
     "lang.pt": "Portuguese",
     "lang.de": "German",
+    "lang.deNote": "Actively improving.",
 
     "contact.chapter": "Contact",
     "contact.title": "Let’s get to know <span class=\"accent-italic\">each other.</span>",

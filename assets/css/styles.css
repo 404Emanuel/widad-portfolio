@@ -173,6 +173,7 @@ main:focus { outline: none; }
 
 /* Large serif lines and lead paragraphs read better without hyphenation. */
 .lead,
+.availability,
 .section-deck,
 .station-lead,
 .contact-text { hyphens: manual; -webkit-hyphens: manual; }
@@ -485,7 +486,8 @@ html:not(.js) .lang-switch { display: none; }
 
 .availability {
   position: relative;
-  max-width: 30rem;
+  max-width: 34rem;
+  text-wrap: balance;
   margin-top: 1.75rem;
   padding-left: 1.1rem;
   color: var(--sub);
@@ -829,6 +831,14 @@ html:not(.js) .lang-switch { display: none; }
 }
 
 .facts { margin-top: 1.5rem; }
+
+/* Small secondary line inside a fact or language row */
+.fact-note {
+  display: block;
+  color: var(--sub);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
 
 .facts > div,
 .language-list > div {
