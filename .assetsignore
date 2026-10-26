@@ -1,0 +1,9 @@
+# Repository files that should not be served on widad.ch
+.git
+.gitignore
+.assetsignore
+.DS_Store
+.wrangler
+node_modules
+README.md
+wrangler.jsonc
